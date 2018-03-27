@@ -27,7 +27,9 @@ namespace WPF_Shop
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            StockListListView.Items.Add(ProductNameBox.Text);
+            List<Product> product = new List<Product>();
+            product.Add(new Product() { ProductName = ProductNameBox.Text, Cost = int.Parse(ProductPriceBox.Text), Amount = int.Parse(ProductQuantityBox.Text) });
+            StockListListView.ItemsSource = product;
         }
     }
     public class Product
