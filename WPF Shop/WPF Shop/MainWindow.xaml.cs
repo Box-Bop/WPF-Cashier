@@ -27,14 +27,26 @@ namespace WPF_Shop
         List<Product> product = new List<Product>();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            product.Add(new Product() { ProductName = ProductNameBox.Text, Cost = int.Parse(ProductPriceBox.Text), Amount = int.Parse(ProductQuantityBox.Text) });
-            StockList.Items.Add(new Product() { ProductName = ProductNameBox.Text, Cost = int.Parse(ProductPriceBox.Text), Amount = int.Parse(ProductQuantityBox.Text) });
+            product.Add(new Product() { ProductName = ProductNameBox.Text, Cost = double.Parse(ProductPriceBox.Text), Amount = int.Parse(ProductQuantityBox.Text) });
+            StockList.Items.Add(new Product() { ProductName = ProductNameBox.Text, Cost = double.Parse(ProductPriceBox.Text), Amount = int.Parse(ProductQuantityBox.Text) });
+        }
+
+        private void AddButton_Click(object sender, RoutedEventArgs e)
+        {
+            foreach (var item in StockList.SelectedItems)
+            {
+                if (StockList.SelectedItem != null)
+                {
+                    //CustomerList.Items.Add((item as Product).Amount - ((item as Product).Amount - 1));
+                    CustomerList.Items.Add((item as Product));
+                }
+            }
         }
     }
     public class Product
     {
         public string ProductName { get; set; }
-        public int Cost { get; set; }
+        public double Cost { get; set; }
         public int Amount { get; set; }
     }
 }

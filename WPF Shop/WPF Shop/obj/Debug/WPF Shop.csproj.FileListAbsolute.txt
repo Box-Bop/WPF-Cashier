@@ -43,3 +43,18 @@ C:\Users\opilane\Desktop\Desctop\WPF Cashier\WPF Shop\WPF Shop\obj\Debug\WPF Sho
 C:\Users\opilane\Desktop\Desctop\WPF Cashier\WPF Shop\WPF Shop\obj\Debug\WPF Shop.csproj.CoreCompileInputs.cache
 C:\Users\opilane\Desktop\Desctop\WPF Cashier\WPF Shop\WPF Shop\obj\Debug\WPF Shop.exe
 C:\Users\opilane\Desktop\Desctop\WPF Cashier\WPF Shop\WPF Shop\obj\Debug\WPF Shop.pdb
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\bin\Debug\WPF Shop.exe.config
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\bin\Debug\WPF Shop.exe
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\bin\Debug\WPF Shop.pdb
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\obj\Debug\WPF Shop.csprojResolveAssemblyReference.cache
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\obj\Debug\MainWindow.g.cs
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\obj\Debug\App.g.cs
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\obj\Debug\WPF Shop_MarkupCompile.cache
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\obj\Debug\WPF Shop_MarkupCompile.lref
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\obj\Debug\MainWindow.baml
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\obj\Debug\WPF Shop.g.resources
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\obj\Debug\WPF_Shop.Properties.Resources.resources
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\obj\Debug\WPF Shop.csproj.GenerateResource.Cache
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\obj\Debug\WPF Shop.csproj.CoreCompileInputs.cache
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\obj\Debug\WPF Shop.exe
+C:\Users\opilane\Desktop\Kummik\WPF-Cashier\WPF Shop\WPF Shop\obj\Debug\WPF Shop.pdb
