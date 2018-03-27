@@ -24,12 +24,11 @@ namespace WPF_Shop
         {
             InitializeComponent();
         }
-
+        List<Product> product = new List<Product>();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            List<Product> product = new List<Product>();
             product.Add(new Product() { ProductName = ProductNameBox.Text, Cost = int.Parse(ProductPriceBox.Text), Amount = int.Parse(ProductQuantityBox.Text) });
-            StockListListView.ItemsSource = product;
+            StockList.Items.Add(new Product() { ProductName = ProductNameBox.Text, Cost = int.Parse(ProductPriceBox.Text), Amount = int.Parse(ProductQuantityBox.Text) });
         }
     }
     public class Product

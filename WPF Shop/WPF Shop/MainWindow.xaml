@@ -9,12 +9,12 @@
     <Grid Margin="10">
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="128" Margin="659,392,0,0" Stroke="Black" VerticalAlignment="Top" Width="280"/>
         <ProgressBar HorizontalAlignment="Left" Height="27" Margin="10,493,0,0" VerticalAlignment="Top" Width="633"/>
-        <ListView Name="StockListListView" Margin="10,48,464,61">
+        <ListView Name="StockList" Margin="10,48,464,61">
             <ListView.View>
                 <GridView>
-                    <GridViewColumn Header="Product name" Width="270"/>
-                    <GridViewColumn Header="Price" Width="100"/>
-                    <GridViewColumn Header="Quantity" Width="100"/>
+                    <GridViewColumn Header="Product name" Width="270" DisplayMemberBinding="{Binding ProductName}"/>
+                    <GridViewColumn Header="Price" Width="100" DisplayMemberBinding="{Binding Cost}"/>
+                    <GridViewColumn Header="Quantity" Width="100" DisplayMemberBinding="{Binding Amount}"/>
                 </GridView>
             </ListView.View>
         </ListView>
@@ -28,6 +28,17 @@
         <TextBox Name="ProductQuantityBox" HorizontalAlignment="Left" Height="29" Margin="754,464,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="183"/>
         <Label Content="Customer's basket:" HorizontalAlignment="Left" Margin="619,9,0,0" VerticalAlignment="Top" FontSize="18"/>
         <Button Content="Add" HorizontalAlignment="Left" Margin="754,498,0,0" VerticalAlignment="Top" Width="85" Click="Button_Click"/>
-        <Label Content="Storage capacity:" HorizontalAlignment="Left" Margin="10,469,0,0" VerticalAlignment="Top"/>
+        <Label Content="Storage capacity:   (MAX: 2000 products)" HorizontalAlignment="Left" Margin="10,469,0,0" VerticalAlignment="Top" Width="229"/>
+        <ListView HorizontalAlignment="Left" Height="307" Margin="619,48,0,0" VerticalAlignment="Top" Width="320">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Product name" Width="180"/>
+                    <GridViewColumn Header="Price" Width="70"/>
+                    <GridViewColumn Header="Quantity" Width="60"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Name="AddButton" Content="Add 1" HorizontalAlignment="Left" Height="28" Margin="485,327,0,0" VerticalAlignment="Top" Width="119"/>
+        <Button Name="RemoveButton" Content="Remove 1" HorizontalAlignment="Left" Height="28" Margin="485,294,0,0" VerticalAlignment="Top" Width="119"/>
     </Grid>
 </Window>
