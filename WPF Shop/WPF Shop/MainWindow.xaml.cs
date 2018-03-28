@@ -35,10 +35,30 @@ namespace WPF_Shop
         {
             foreach (var item in StockList.SelectedItems)
             {
-                if (StockList.SelectedItem != null)
+                if (StockList.SelectedItems != null)
                 {
-                    //CustomerList.Items.Add((item as Product).Amount - ((item as Product).Amount - 1));
-                    CustomerList.Items.Add((item as Product));
+                    if (CustomerList.Items.Count == 0)
+                    {
+                        product.Where(x => x.ProductName == x.ProductName).ToList().ForEach(y => y.Amount = y.Amount - (y.Amount - 1));
+                        CustomerList.Items.Add(product);
+                    }
+                    else
+                    {
+                        //foreach (ListViewItem prB in CustomerList.Items)
+                        //{
+                        //product.Where(x => x.ProductName == x.ProductName
+                        if (!CustomerList.Items.Contains(product.Where(x => x.ProductName == x.ProductName)))
+                        {
+                            product.Where(x => x.ProductName == StockList.SelectedItem.ToString()).ToList().ForEach(y => y.Amount = y.Amount - (y.Amount - 1));
+                            CustomerList.Items.Add(product);
+                        }
+                        else
+                        {
+                            product.Where(x => x.ProductName == x.ProductName).ToList().ForEach(y => y.Amount = y.Amount + 1);
+                            CustomerList.Items.Add(product);
+                        }
+                        //}
+                    }
                 }
             }
         }
