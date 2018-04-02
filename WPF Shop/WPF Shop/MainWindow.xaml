@@ -8,7 +8,7 @@
         Title="Shop's cashier" Height="578.571" Width="974.663" ResizeMode="CanMinimize">
     <Grid Margin="10">
         <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="94" Margin="659,426,0,0" Stroke="Black" VerticalAlignment="Top" Width="280"/>
-        <ListView Name="StockList" Margin="10,48,464,10">
+        <ListView Name="StockList" Margin="10,48,464,37">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Product name" Width="270" DisplayMemberBinding="{Binding ProductName}"/>
@@ -35,8 +35,9 @@
             </ListView.View>
         </ListView>
         <Button Name="AddButton" Content="Add" HorizontalAlignment="Left" Height="28" Margin="548,292,0,0" VerticalAlignment="Top" Width="40" Click="AddButton_Click"/>
-        <Button Name="RemoveButton" Content="Remove" HorizontalAlignment="Left" Height="28" Margin="485,245,0,0" VerticalAlignment="Top" Width="119" Click="RemoveButton_Click"/>
+        <Button Name="RemoveButton" Content="Remove" HorizontalAlignment="Left" Height="28" Margin="485,245,0,0" VerticalAlignment="Top" Width="119" Click="RemoveStockButton_Click"/>
         <TextBox Name="AddAmountBox" HorizontalAlignment="Left" Height="28" Margin="503,292,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" Width="40" TextAlignment="Center"/>
         <Button Name="PurchaseButton" Content="Purchase" HorizontalAlignment="Left" Margin="862,338,0,0" VerticalAlignment="Top" Width="75" Click="PurchaseButton_Click"/>
+        <Button Name="RemoveStockButton" Content="Remove from stock" HorizontalAlignment="Left" Height="28" Margin="181,492,0,0" VerticalAlignment="Top" Width="119" Click="RemoveStockButton_Click" AutomationProperties.IsColumnHeader="True"/>
     </Grid>
 </Window>

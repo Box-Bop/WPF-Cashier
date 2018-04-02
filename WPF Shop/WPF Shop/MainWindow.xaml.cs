@@ -25,6 +25,7 @@ namespace WPF_Shop
             InitializeComponent();
             AddButton.IsEnabled = false;
             RemoveButton.IsEnabled = false;
+            RemoveStockButton.IsEnabled = false;
         }
         List<Product> ProductList = new List<Product>();
         List<Product> BasketList = new List<Product>();
@@ -41,6 +42,7 @@ namespace WPF_Shop
                 ProductNameBox.Clear();
                 ProductPriceBox.Clear();
                 AddButton.IsEnabled = true;
+                RemoveStockButton.IsEnabled = true;
             }
         }
 
@@ -81,6 +83,21 @@ namespace WPF_Shop
 
                 CustomerList.ItemsSource = null;
                 CustomerList.ItemsSource = BasketList;
+            }
+            else
+            {
+                MessageBox.Show("Subtracting 1 air from 0 air would give you 2,147,483,646 air, please don't.");
+            }
+        }
+        private void RemoveStockButton_Click(object sender, RoutedEventArgs e)
+        {
+            int index = StockList.SelectedIndex;
+            if (index > -1)
+            {
+                ProductList.RemoveAt(index);
+
+                StockList.ItemsSource = null;
+                StockList.ItemsSource = BasketList;
             }
             else
             {
