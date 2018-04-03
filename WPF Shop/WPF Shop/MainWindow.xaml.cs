@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -80,29 +81,27 @@ namespace WPF_Shop
             if (index > -1)
             {
                 BasketList.RemoveAt(index);
-
-                CustomerList.ItemsSource = null;
-                CustomerList.ItemsSource = BasketList;
             }
             else
             {
                 MessageBox.Show("Subtracting 1 air from 0 air would give you 2,147,483,646 air, please don't.");
             }
+            CustomerList.ItemsSource = null;
+            CustomerList.ItemsSource = BasketList;
         }
         private void RemoveStockButton_Click(object sender, RoutedEventArgs e)
         {
             int index = StockList.SelectedIndex;
-            if (index > -1)
+            if (index >= 0)
             {
                 ProductList.RemoveAt(index);
-
-                StockList.ItemsSource = null;
-                StockList.ItemsSource = BasketList;
             }
             else
             {
                 MessageBox.Show("Subtracting 1 air from 0 air would give you 2,147,483,646 air, please don't.");
             }
+            StockList.ItemsSource = null;
+            StockList.ItemsSource = ProductList;
         }
 
         private void PurchaseButton_Click(object sender, RoutedEventArgs e)
